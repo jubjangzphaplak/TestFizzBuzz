@@ -1,4 +1,4 @@
-const libs =require('../../src/fizz')
+const libs =require('../../src/fizzbuzz')
   describe ('fizzbuzz', () => {
     it('should return 1 if number is 1', () => {
       const number = 1;
@@ -118,9 +118,9 @@ const libs =require('../../src/fizz')
     })
 
     it('should return Fizz if number is 66', () => {
-      const number = 8;
+      const number = 66;
       const result = libs.fizzbuzz(number);
-      expect(result).toContain("Fizz");
+      expect(result).toBe("Fizz");
 
     })
 
